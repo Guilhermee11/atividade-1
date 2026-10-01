@@ -1,0 +1,56 @@
+lista = [10, 20, 30]
+
+
+# Função para exibir o estado atual da lista
+def mostrar_lista():
+    print("\n" + "=" * 50)
+    print("Conteúdo da lista:", lista)
+    print("id() da lista:", id(lista))
+
+    print("\nElementos:")
+    if len(lista) == 0:
+        print("A lista está vazia.")
+    else:
+        for indice, valor in enumerate(lista):
+            print(f"Índice: {indice} | Valor: {valor} | id(): {id(valor)}")
+
+
+# 1. Exibir lista inicial
+print("1. LISTA INICIAL")
+mostrar_lista()
+
+
+# 2. Adicionar um elemento ao final
+print("\n2. APPEND - Adicionando 40 ao final")
+lista.append(40)
+mostrar_lista()
+
+
+# 3. Inserir um elemento em uma posição específica
+print("\n3. INSERT - Inserindo 15 na posição 1")
+lista.insert(1, 15)
+mostrar_lista()
+
+
+# 4. Remover um elemento pelo valor
+print("\n4. REMOVE - Removendo o valor 30")
+lista.remove(30)
+mostrar_lista()
+
+
+# 5. Remover um elemento pela posição
+print("\n5. POP - Removendo o elemento da posição 1")
+lista.pop(1)
+mostrar_lista()
+
+
+# 6. Alterar o valor de um elemento existente
+print("\n6. ALTERAÇÃO - Alterando o primeiro elemento de 10 para 100")
+lista[0] = 100
+mostrar_lista()
+
+
+# 7. Limpar a lista
+print("\n7. CLEAR - Limpando a lista")
+lista.clear()
+mostrar_lista()
